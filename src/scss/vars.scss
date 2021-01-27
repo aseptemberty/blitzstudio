@@ -1,0 +1,36 @@
+//main
+//images
+$bg-image: url('../images/Background.png');
+//colors
+$gray: FFFFFF;
+$light-gray: #F1F1F1;
+$black: #202020;
+//fonts
+%font-18{
+  font-family: PTSans-Regular,sans-serif;
+  font-size:15px;
+  color: $light-gray;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+%font-13{
+  font-family:OpenSans, sans-serif;
+  font-size:10px;
+  color:$light-gray;
+  text-transform: uppercase;
+}
+%font-24_light{
+  font-family: OpenSans-Light, sans-serif;
+  color: $black;
+  font-size: 18px;
+  font-weight: lighter;
+}
+%font-24{
+  font-family: OpenSans, sans-serif;
+  color: $black;
+  font-size: 18px;
+  font-weight: normal;
+}
+//size
+$tablet:770px;
+$mobile:460px;

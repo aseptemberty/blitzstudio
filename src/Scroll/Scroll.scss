@@ -1,0 +1,25 @@
+@import "../scss/vars";
+.Scroll{
+    height:100px;
+}
+.Scroll p{
+    @extend %font-13;
+    bottom: 30px;
+    left:45%;
+
+}
+.Scroll p:after{
+    display: block;
+    bottom: -20px;
+    content: '';
+    position: relative;
+    left: 48%;
+    width: 16px;
+    height: 16px;
+    background-image: url("../images/Double_Arrowgray.svg");
+}
+@media (max-width: $mobile) {
+    Scroll{
+        display: none;
+    }
+}

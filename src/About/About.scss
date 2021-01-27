@@ -1,0 +1,60 @@
+@import "../scss/vars";
+
+.About{
+  margin:0 100px;
+  display: flex;
+  flex-direction: row;
+
+  div{
+    width: 50%;
+  }
+  div:first-child{
+    padding-top: 50px;
+  }
+  div:last-child{
+    padding: 80px 20px;
+  }
+
+  img{
+    width: 100%;
+  }
+  h3{
+    @extend %font-24;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-align: left;
+  }
+  p{
+    @extend %font-24_light;
+    text-align: left;
+  }
+  p:last-child{
+    font-weight: bold;
+  }
+}
+
+@media (max-width:$tablet){
+  .About{
+    flex-direction: column;
+  }
+  .About div{
+    width: 100%;
+  }
+}
+@media (max-width: $mobile) {
+  .About{
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  .About div{
+    flex-direction: column;
+    padding: 0;
+  }
+  div:first-child{
+    padding-top: 0;
+  }
+  div:last-child{
+    padding: 0;
+  }
+}

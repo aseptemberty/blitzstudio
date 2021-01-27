@@ -1,0 +1,37 @@
+@import "../scss/vars";
+
+.Top{
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: $bg-image;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.Top p{
+  @extend %font-13;
+  position: absolute;
+  bottom: 100px;
+  left:40%;
+
+}
+.Top p:after{
+  position: absolute;
+  bottom: -43px;
+  left:40%;
+  content: '';
+  z-index: 10;
+  width: 32px;
+  height: 32px;
+  background-image: url("../images/Double_Arrowgray.svg");
+}
+
+@media (max-width:$tablet) {
+  .Top{
+    height:911px;
+    background:$bg-image center  no-repeat;
+  }
+}
