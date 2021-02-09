@@ -1,0 +1,65 @@
+@import "../../scss/vars";
+
+.Menu{
+  background: transparent;
+  width:100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    border-bottom: 2px solid #F1F1F1;
+    width: 100%;
+    margin: 0 60px;
+  }
+  li{
+    padding:40px 30px;
+    list-style: none;
+
+  }
+  a{
+    @extend %font-18;
+  }
+  .menu-button{
+    display: none;
+  }
+  }
+@media (max-width: $tablet) {
+  .Menu ul{
+    justify-content: space-evenly;
+  }
+  .Menu li{
+    padding: 40px 3px;
+  }
+  
+}
+@media (max-width: $mobile) {
+  .Menu {
+    height: 0;
+    ul{
+      display: none;
+    }
+    .menu-button{
+      display: block;
+      font-family: PTSans-Regular,sans-serif;
+      font-size:24px;
+      color: $light-gray;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-style: normal;
+      line-height: normal;
+      text-align: left;
+      background: transparent;
+      position: absolute;
+      top: 40px;
+      left: 40px;
+      border: none;
+    }
+  }
+
+}
+

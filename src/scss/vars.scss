@@ -1,36 +1,64 @@
 //main
 //images
-$bg-image: url('../images/Background.png');
+$bg-image: url('../../images/Background.png');
 //colors
 $gray: FFFFFF;
 $light-gray: #F1F1F1;
 $black: #202020;
 //fonts
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+//fonts-styles
 %font-18{
   font-family: PTSans-Regular,sans-serif;
-  font-size:15px;
+  font-size:24px;
   color: $light-gray;
   text-decoration: none;
   text-transform: uppercase;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  text-align: left;
 }
+
 %font-13{
-  font-family:OpenSans, sans-serif;
-  font-size:10px;
+  font-family: 'Open Sans', sans-serif;
+  font-size:13px;
   color:$light-gray;
   text-transform: uppercase;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 2px;
 }
-%font-24_light{
-  font-family: OpenSans-Light, sans-serif;
+%font-14_light{
+  font-family: 'Open Sans', sans-serif;
   color: $black;
-  font-size: 18px;
-  font-weight: lighter;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0.6px;
+  line-height: 50px;
 }
 %font-24{
-  font-family: OpenSans, sans-serif;
+  font-family:'Open Sans', sans-serif;
   color: $black;
-  font-size: 18px;
-  font-weight: normal;
+  font-size: 45px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+%font-36{
+  color: #202020;
+  font-family: "Open Sans",sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 50px;
+  text-align: left;
 }
 //size
-$tablet:770px;
-$mobile:460px;
+$tablet:850px;
+$mobile:500px;

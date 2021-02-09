@@ -1,5 +1,5 @@
 import './About.scss'
-import Jason_Wood from '../images/Jason_Wood.png'
+import Jason_Wood from '../../images/Jason_Wood.png'
 
 function About() {
    return (
